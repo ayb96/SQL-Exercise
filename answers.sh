@@ -26,3 +26,25 @@ WHERE name = "Alex"; "
 
 
 
+"Creating Table"
+
+"CREATE TABLE  graduates (
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	Name VARCHAR(255) NOT NULL,
+	Age  INT,
+	Gender VARCHAR(255),
+	Points INT,
+	Graduation VARCHAR(255));
+drop table graduates
+INSERT INTO graduates (ID, Name, Age, Gender, Points)
+SELECT ID, Name, Age, Gender, Points FROM students
+WHERE Name="Layal";
+DELETE FROM students
+WHERE Name = "Layal";
+UPDATE graduates
+SET Graduation = "08/09/2018"
+WHERE Name = "Layal";"
+
+
+
+
