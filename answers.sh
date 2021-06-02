@@ -46,5 +46,21 @@ SET Graduation = "08/09/2018"
 WHERE Name = "Layal";"
 
 
+"Joins"
+
+"CREATE TABLE companyDate (
+Name Varchar(45) NOT NULL ,
+CompanyName Varchar(45) not Null,
+Date int not NUll);
+INSERT into companyDate (Name,CompanyName,Date ) 
+SELECT employees.Name, employees.Company, companies.Date
+FROM employees 
+JOIN companies 
+ON employees.ID=companies.ID ;
+
+SELECT Name from companyDate
+WHERE Date <2000
+SELECT Name from employees
+WHERE Role ="Graphic Designer" "
 
 
