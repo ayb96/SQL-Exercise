@@ -64,3 +64,14 @@ SELECT Name from employees
 WHERE Role ="Graphic Designer" "
 
 
+
+"Count & Filter"
+"
+SELECT ID, Name, Gender, Age, max(Points) FROM students
+SELECT ID, Name, Gender, Age, avg(Points) FROM students
+SELECT * FROM students
+WHERE Points = 500
+SELECT * FROM students WHERE Name LIKE '%s%'
+SELECT * from students ORDER by Points DESC
+"
+
